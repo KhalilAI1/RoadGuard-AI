@@ -1,0 +1,26 @@
+project:
+  name: RoadGuard-AI
+  version: "1.0"
+
+data:
+  dataset: RDD2022
+  img_size: 640
+  train_split: 0.70
+  val_split: 0.15
+  test_split: 0.15
+
+model:
+  name: yolov8m
+  pretrained: true
+
+training:
+  epochs: 50
+  batch_size: 16
+  lr0: 0.01
+  device: 0
+
+classes:
+  - D00
+  - D10
+  - D20
+  - D40
