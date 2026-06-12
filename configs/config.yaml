@@ -15,7 +15,7 @@ model:
 
 training:
   epochs: 50
-  batch_size: 16
+  batch_size: 8
   lr0: 0.01
   device: 0
 
@@ -24,3 +24,4 @@ classes:
   - D10
   - D20
   - D40
+  - D50

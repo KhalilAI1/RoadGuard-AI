@@ -1,6 +1,7 @@
 data/raw/
 data/processed/
 models/checkpoints/
+data/augmented/ 
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
