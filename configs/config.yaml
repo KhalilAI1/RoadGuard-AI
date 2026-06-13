@@ -16,8 +16,9 @@ model:
 training:
   epochs: 50
   batch_size: 8
-  lr0: 0.01
+  lr0: 0.001
   device: 0
+  patience: 10
 
 classes:
   - D00

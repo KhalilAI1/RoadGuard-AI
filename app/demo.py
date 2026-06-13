@@ -2,8 +2,14 @@ import gradio as gr
 from ultralytics import YOLO
 from pathlib import Path
 import cv2
+from huggingface_hub import hf_hub_download
 
-model = YOLO("runs/detect/train-7/weights/best.pt")
+
+model_path = hf_hub_download(
+    repo_id="Khalil200383/RoadGuard-AI",
+    filename="best.pt"
+)
+model = YOLO(model_path)
 
 # predict function
 def predict(image):
@@ -17,3 +23,4 @@ demo = gr.Interface(fn=predict,
                     title="Identifying road defects Demo",
                     description="Upload an image to see the detected objects.")
 demo.launch()
+ 

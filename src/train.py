@@ -15,6 +15,7 @@ if __name__ == '__main__':
     batch = config.get("training", {}).get("batch_size")
     imgsz = config.get("data", {}).get("img_size")
     device = config.get("training", {}).get("device")
+    patience = config.get("training", {}).get("patience")
 
     # load model
     model = YOLO("runs/detect/train-7/weights/best.pt")
@@ -30,7 +31,8 @@ if __name__ == '__main__':
     device=device,
     workers=0,
     cache=False,
-    resume=False   
+    resume=False,
+    patience=patience   
 )
 
     print("✅ done!")
