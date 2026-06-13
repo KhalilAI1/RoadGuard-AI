@@ -29,12 +29,13 @@ The system detects **5 types of road damage**:
 ## 🖼️ Demo
 
 <!-- أضف هون screenshot للـ Gradio demo -->
-> *Add a screenshot of the Gradio demo here*
+![alt text](results\visualizations\image.png)
 
 ### Sample Predictions
 
 <!-- أضف هون صور من نتائج الـ inference -->
-> *Add sample prediction images here*
+![alt text](results\visualizations\test.jpg)
+![alt text](results\visualizations\image.webp)
 
 ---
 
@@ -62,12 +63,13 @@ The system detects **5 types of road damage**:
 ### Training Curves
 
 <!-- أضف هون صورة results.png من runs/detect/train-7/ -->
-> *Add training curves image here*
+![alt text](results\visualizations\results.png)
 
 ### Confusion Matrix
 
 <!-- أضف هون صورة confusion_matrix_normalized.png من runs/detect/train-7/ -->
 > *Add confusion matrix image here*
+![alt text](results\visualizations\confusion_matrix_normalized.png)
 
 ---
 
